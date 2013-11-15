@@ -6,6 +6,7 @@
   "author": "Pieter Noordhuis <pcnoordhuis@gmail.com>",
   "main": "hiredis",
   "scripts": {
+    "preinstall": "git submodule init; git submodule update",
     "test": "node test/reader.js"
   },
   "dependencies": {
