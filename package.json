@@ -1,11 +1,12 @@
 {
   "name": "hiredis",
   "description": "Wrapper for reply processing code in hiredis",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "homepage": "http://github.com/pietern/hiredis-node",
   "author": "Pieter Noordhuis <pcnoordhuis@gmail.com>",
   "main": "hiredis",
   "scripts": {
+    "preinstall": "git clone git://github.com/redis/hiredis.git deps/hiredis; cd deps/hiredis; git reset --hard 6bd1172419a385673c9f893d0a75c4220f87a5bb; cd ../..; node-gyp rebuild",
     "test": "node test/reader.js"
   },
   "dependencies": {
