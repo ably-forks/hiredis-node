@@ -6,6 +6,7 @@
   "author": "Pieter Noordhuis <pcnoordhuis@gmail.com>",
   "main": "hiredis",
   "scripts": {
+    "preinstall": "git clone git://github.com/redis/hiredis.git deps/hiredis"
     "test": "node test/reader.js"
   },
   "dependencies": {
